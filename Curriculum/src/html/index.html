@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Curriculum Raúl Menéndez</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8">
+    <!-- Redirection -->
+    <meta http-equiv="refresh" content="500" url="https://marca.com/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Curriculum" />
+    <meta property="og:description" content="Datos escolares y laborales sobre Raúl Menéndez" />
+    <meta name="og:image" content="./images/fotodni.png"/>
+    <meta name="og:locality" content="Valencia"/>
+    <meta name="og:region" content="UE"/>
+    <!-- Languaje Open Graph-->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <!-- Twitter cards -->
+    <meta name="twitter:site" content="@rmenendez">
+    <meta name="twitter:creator" content="@rmenendez">
+    <meta name="twitter:title" content="Curriculum Raúl Menéndez">
+
+</head>
+<body>
+<header>
+    <img src="./images/fotodni.png" alt="Foto de dni">
+
+    <!-- Schema.org -->
+   <section itemscope itemtype="http://schema.org/Persona">
+    <h2>Datos Personales</h2>
+
+    <p itemprop="nombre">Nombre Completo: Raúl Menéndez</p>
+    <p itemprop="direccion" >Dirección: Av. Albaida nº8 pta. 5</p>
+    <p itemprop="provincia">Província: Valencia</p>
+    <p itemprop="localidad">Localidad: Ontinyent</p>
+
+    <p itemprop="correo">Correo electrónico: rmenendeziestacio@gmail.com</p>
+    <p itemprop="telefono">Teléfono: 234546875</p>
+
+   </section>
+   <!-- Slider with js and css -->
+   <aside class="slider-container">
+        <section class="mySlider fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="../images/slide1.jpg" alt="Montañas nevadas" style="width:100%">
+            <div class="text">Lorem</div>
+        </section>
+      
+        <section class="mySlider fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="../images/slide2.jpg" alt="Paisaje con arboles" style="width:100%">
+            <div class="text">Ipsum</div>
+        </section>
+        
+        <section class="mySlider fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="../images/slide3.jpg" alt="Paisaje montañoso" style="width:100%">
+            <div class="text">Dolor</div>
+        </section>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </aside>
+    <br>
+    <section style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </section>
+    <script src="../js/slider.js"></script> 
+<!-- End Slider -->
+</header>
+<main>
+    <section>
+        <p><cite>El que mucho abarca poco aprieta</cite>: este refrán me define bastante ya que soy una persona que no tiene prisa por realizar un trabajo o varios, ya que mi interés es que quede perfecto.
+        Me considero una persona sincera, capacitada para una gran selección de trabajos. 
+
+        También soy consciente de todo lo que puedo aportar a un nuevo puesto de trabajo.</p>
+        </section>
+    <aside>
+        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Experiencia profesional</h2>'+
+        '<ul>'+
+        '<li>600 h en oficina como técnico de sistemas</li>'+
+        '<li>300 h en lavadero de coche</li>'+
+        '<li>300 h de servicios de personas con dependecia</li>'+
+        '</ul>' ">Experiencia profesional</button>
+        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Estudios académicos</h2>'+
+        '<ul>'+
+        '<li>Título en Técnico de Sistemas Microinformáticos y redes</li>'+
+        '<li>Título en Técnico de mantenimiento electromecánico</li>'+
+        '<li>Título superior en Desarrollo de Aplicaciones Web</li>'+
+        '</ul>' ">Estudios Académicos</button>
+        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Aficiones</h2>'+
+        '<ul>'+
+        '<li>Tocar la guitarra</li>'+
+        '<li>Hacer deporte</li>'+
+        '<li>Ver películas y series</li>'+
+        '</ul>' ">Aficiones</button>
+        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Datos de interés</h2>'+
+        '<ul>'+
+        '<li>Carnet de conducir, disponibilidad completa</li>'+
+        '<li>Movilidad completa</li>'+
+        '</ul>' ">Datos de interés</button>
+
+        <p id="button"></p>
+        </aside>
+</main>
+<footer>
+        
+</footer>
+</body>
+</html>
