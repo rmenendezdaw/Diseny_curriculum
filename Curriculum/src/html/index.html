@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>Curriculum Raúl Menéndez</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- Basic Meta Tags -->
-    <meta charset="utf-8">
-    <!-- Redirection -->
-    <meta http-equiv="refresh" content="500" url="https://marca.com/">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Curriculum" />
-    <meta property="og:description" content="Datos escolares y laborales sobre Raúl Menéndez" />
-    <meta name="og:image" content="./images/fotodni.png"/>
-    <meta name="og:locality" content="Valencia"/>
-    <meta name="og:region" content="UE"/>
-    <!-- Languaje Open Graph-->
-    <meta property="og:locale" content="es_ES" />
-    <meta property="og:locale:alternate" content="en_GB" />
-    <!-- Twitter cards -->
-    <meta name="twitter:site" content="@rmenendez">
-    <meta name="twitter:creator" content="@rmenendez">
-    <meta name="twitter:title" content="Curriculum Raúl Menéndez">
-
-</head>
-<body>
+    <head>
+        <title>Curriculum Raúl Menéndez</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- Basic Meta Tags -->
+        <meta charset="utf-8">
+        <!-- Redirection -->
+        <meta http-equiv="refresh" content="500" url="https://marca.com/">
+        <!-- Open Graph -->
+        <meta property="og:title" content="Curriculum" />
+        <meta property="og:description" content="Datos escolares y laborales sobre Raúl Menéndez" />
+        <meta name="og:image" content="./images/fotodni.png"/>
+        <meta name="og:locality" content="Valencia"/>
+        <meta name="og:region" content="UE"/>
+        <!-- Languaje Open Graph-->
+        <meta property="og:locale" content="es_ES" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <!-- Twitter cards -->
+        <meta name="twitter:site" content="@rmenendez">
+        <meta name="twitter:creator" content="@rmenendez">
+        <meta name="twitter:title" content="Curriculum Raúl Menéndez">
+        
+    </head>
+    <body>
 <header>
     <section class="header-image"> 
         <img src="../images/fotodni.png" alt="Foto de dni">
@@ -70,39 +70,67 @@
 <!-- End menu nav -->
 </header>
 <main>
+    <!-- Description -->
     <section>
         <p><cite>El que mucho abarca poco aprieta</cite>: este refrán me define bastante ya que soy una persona que no tiene prisa por realizar un trabajo o varios, ya que mi interés es que quede perfecto.
         Me considero una persona sincera, capacitada para una gran selección de trabajos. 
 
         También soy consciente de todo lo que puedo aportar a un nuevo puesto de trabajo.</p>
         </section>
-    <aside>
-        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Experiencia profesional</h2>'+
-        '<ul>'+
-        '<li>600 h en oficina como técnico de sistemas</li>'+
-        '<li>300 h en lavadero de coche</li>'+
-        '<li>300 h de servicios de personas con dependecia</li>'+
-        '</ul>' ">Experiencia profesional</button>
-        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Estudios académicos</h2>'+
-        '<ul>'+
-        '<li>Título en Técnico de Sistemas Microinformáticos y redes</li>'+
-        '<li>Título en Técnico de mantenimiento electromecánico</li>'+
-        '<li>Título superior en Desarrollo de Aplicaciones Web</li>'+
-        '</ul>' ">Estudios Académicos</button>
-        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Aficiones</h2>'+
-        '<ul>'+
-        '<li>Tocar la guitarra</li>'+
-        '<li>Hacer deporte</li>'+
-        '<li>Ver películas y series</li>'+
-        '</ul>' ">Aficiones</button>
-        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Datos de interés</h2>'+
-        '<ul>'+
-        '<li>Carnet de conducir, disponibilidad completa</li>'+
-        '<li>Movilidad completa</li>'+
-        '</ul>' ">Datos de interés</button>
+    <!-- End Description -->
+    <!-- Main buttons -->
+    <aside class="main-buttons">
+        <button id="myBtn">Experiencia profesional</button>
+        <button id="myBtn1">Estudios Académicos</button>
+        <button id="myBtn2">Aficiones</button>
+        <button id="myBtn3">Datos de interés</button>
+        <section id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Experiencia profesional</h2>
+                <ul>
+                    <li>600 h en oficina como técnico de sistemas</li>
+                    <li>300 h en lavadero de coche</li>
+                    <li>300 h de servicios de personas con dependecia</li>
+                </ul>
+            </div>
+        </section>
+        <section id="myModal1" class="modal1">
+            <div class="modal-content">
+                <span class="close1">&times;</span>
+                <h2>Estudios académicos</h2>
+                <ul>
+                    <li>Título en Técnico de Sistemas Microinformáticos y redes</li>
+                    <li>Título en Técnico de mantenimiento electromecánico</li>
+                    <li>Título superior en Desarrollo de Aplicaciones Web</li>
+                </ul>
+            </div>
+        </section>
+        <section id="myModal2" class="modal2">
+            <div class="modal-content">
+                <span class="close2">&times;</span>
+                <h2>Aficiones</h2>
+                <ul>
+                    <li>Tocar la guitarra</li>
+                    <li>Hacer deporte</li>
+                    <li>Ver películas y series</li>
+                </ul>
+            </div>
+        </section>
+        <section id="myModal3" class="modal2">
+            <div class="modal-content">
+                <span class="close3">&times;</span>
+                <h2>Datos de interés</h2>
+                <ul>
+                    <li>Carnet de conducir, disponibilidad completa</li>
+                    <li>Movilidad completa</li>
+                </ul>
+            </div>
+        </section>
+    </aside>
+    <script src="../js/modal.js"></script> 
 
-        <p id="button"></p>
-        </aside>
+        <!-- End Main Buttons -->
 </main>
 <footer>
     <section class="footer-information">
