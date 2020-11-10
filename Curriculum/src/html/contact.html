@@ -33,12 +33,13 @@
    <section class="header-content" itemscope itemtype="http://schema.org/Persona">
     <h2>Datos Personales</h2>
 
-    <p itemprop="nombre"><strong>Nombre Completo:</strong> Raúl Menéndez</p>
-    <p itemprop="direccion"><strong>Dirección:</strong> Av. Albaida nº8 pta. 5</p>
-    <p itemprop="provincia"><strong>Província:</strong> Valencia</p>
-    <p itemprop="localidad"><strong>Localidad:</strong> Ontinyent</p>
-    <p itemprop="correo"><strong>Correo electrónico:</strong> rmenendeziestacio@gmail.com</p>
-    <p itemprop="telefono"><strong>Teléfono:</strong> 234546875</p>
+    <p itemprop="nombre">Nombre Completo: Raúl Menéndez</p>
+    <p itemprop="direccion" >Dirección: Av. Albaida nº8 pta. 5</p>
+    <p itemprop="provincia">Província: Valencia</p>
+    <p itemprop="localidad">Localidad: Ontinyent</p>
+
+    <p itemprop="correo">Correo electrónico: rmenendeziestacio@gmail.com</p>
+    <p itemprop="telefono">Teléfono: 234546875</p>
 
    </section>
    <!-- Slider with js and css -->
@@ -70,39 +71,28 @@
 <!-- End menu nav -->
 </header>
 <main>
-    <section>
-        <p><cite>El que mucho abarca poco aprieta</cite>: este refrán me define bastante ya que soy una persona que no tiene prisa por realizar un trabajo o varios, ya que mi interés es que quede perfecto.
-        Me considero una persona sincera, capacitada para una gran selección de trabajos. 
+    <section class="containerForm">
+        <form class="contactForm">
+                <label for="name">Name </label><br>
+                <input type="text" name="name" autofocus><br><br>
+    
+                <label for="surname">Surname </label><br>
+                <input type="text" name="surname"><br><br>
+            
+                <label for="correo">Email</label><br>
+                <input name="correo" type="text" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"><br><br>
+    
+                <label for="recorreo">Confirm email</label><br>
+                <input name="recorreo" type="text" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"><br><br>
+    
+                <label for="comment">Comment</label><br>
+                <textarea name="comment" cols="50" rows="10"></textarea>
 
-        También soy consciente de todo lo que puedo aportar a un nuevo puesto de trabajo.</p>
-        </section>
-    <aside>
-        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Experiencia profesional</h2>'+
-        '<ul>'+
-        '<li>600 h en oficina como técnico de sistemas</li>'+
-        '<li>300 h en lavadero de coche</li>'+
-        '<li>300 h de servicios de personas con dependecia</li>'+
-        '</ul>' ">Experiencia profesional</button>
-        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Estudios académicos</h2>'+
-        '<ul>'+
-        '<li>Título en Técnico de Sistemas Microinformáticos y redes</li>'+
-        '<li>Título en Técnico de mantenimiento electromecánico</li>'+
-        '<li>Título superior en Desarrollo de Aplicaciones Web</li>'+
-        '</ul>' ">Estudios Académicos</button>
-        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Aficiones</h2>'+
-        '<ul>'+
-        '<li>Tocar la guitarra</li>'+
-        '<li>Hacer deporte</li>'+
-        '<li>Ver películas y series</li>'+
-        '</ul>' ">Aficiones</button>
-        <button type="button" onclick="document.getElementById('button').innerHTML = '<h2>Datos de interés</h2>'+
-        '<ul>'+
-        '<li>Carnet de conducir, disponibilidad completa</li>'+
-        '<li>Movilidad completa</li>'+
-        '</ul>' ">Datos de interés</button>
+                <br><br><input value="Send" type="submit">
 
-        <p id="button"></p>
-        </aside>
+        </form>
+    </section>
+   
 </main>
 <footer>
     <section class="footer-information">
