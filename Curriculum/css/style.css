@@ -2,14 +2,14 @@
 :root{
   --vdark:#242424;
   --dark:#494949;
-  --medium:  #9ea7aa;
+  --medium:  #a8b0c0;
   --low: #eeeeee;
 }
 *{
   margin: 0;
 }
 hr{
-  border: 2px solid blue;
+  border: 2px solid var(--vdark);
 }
 
 html{
@@ -87,6 +87,7 @@ html{
 
 /* HEADER */
 header {
+  color: var(--low);
   background-color: var(--dark); 
   display: flex;
   flex-flow: row wrap;
@@ -98,7 +99,6 @@ header {
 
 .header-content {
   margin: 2em;
-  color: var(--low);
   align-self: center;
 }
 .header-content p{
@@ -124,10 +124,13 @@ header {
 .menu a{
   transition: 0.5s;
   text-decoration: none;
-  color: White;
+  color: var(--low);
   size: 1em;
+  font-weight: bold;
+
 }
 .menu a:hover{
+  font-weight: bold;
   font-size: 1.5em;
   transition: 0.5s;
 }
@@ -144,6 +147,7 @@ header {
   /* MAIN TECHNOLOGIES */
   .main-technologies{
     text-align: center;
+    color: var(--low);
     padding: 1em;
     height: 195px;
     background-color: var(--dark); 
@@ -167,6 +171,7 @@ header {
   /* END-MAIN TECHNOLOGIES */
   /* MAIN HOME BUTTONS */
   .main-buttons{
+    color: var(--low);
     background-color: var(--dark); 
   }
   .buttons{
@@ -208,6 +213,7 @@ header {
 }
 /* Modal Content */
 .modal-content {
+  color: var(--vdark);
   background-color: var(--medium); 
   margin: auto;
   padding: 20px;
@@ -235,6 +241,7 @@ header {
 }
 .modal-content-list {
   margin: 2em;
+  color: var(--vdark);
   list-style-type: square;
 }
 /* END-MODAL */
@@ -251,22 +258,20 @@ header {
   padding-bottom: 1em;
   text-align: center;
   width: 500px;
-  background-color: aliceblue;
+  background-color: var(--low);
 }
 .contactForm label{
   font-weight: bold;
 }
 /* END-CONTACT */
-
-
 /* FOOTER */
 footer{
-  background-color: black;
+  background-color: var(--vdark);
   height: 100px;
   display:flex;
   justify-content: center;
   align-items: center;
-  color: wheat;
+  color: var(--low);
 }
 
 /* END-FOOTER */
